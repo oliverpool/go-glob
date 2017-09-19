@@ -56,7 +56,7 @@ func TestGlob(t *testing.T) {
 			failing:  []string{"12", "123.", ".123", ""},
 		},
 		{
-			pattern:  "*.*",
+			pattern:  "***.*",
 			matching: []string{".", "a.b", "a.", "b."},
 			failing:  []string{"", "a", "b", "*"},
 		},
