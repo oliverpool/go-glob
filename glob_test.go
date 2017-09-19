@@ -20,7 +20,7 @@ func TestGlob(t *testing.T) {
 		{
 			pattern:  "a",
 			matching: []string{"a"},
-			failing:  []string{"", "b", "aa"},
+			failing:  []string{"", "b", "aa", "A"},
 		},
 		{
 			pattern:  "*",

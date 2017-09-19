@@ -4,7 +4,7 @@ import "strings"
 
 const glob = "*"
 
-// Matcher creates a function that return true for subjects that match the glob
+// Matcher creates a function that return true for subjects that match the pattern
 func Matcher(pattern string) func(subject string) bool {
 	if pattern == glob {
 		return func(string) bool {
